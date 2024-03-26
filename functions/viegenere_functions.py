@@ -1,4 +1,6 @@
 def encoder(text, keyword):
+    text = text.lower()
+    keyword = keyword.lower()
     key_index = 0
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     encrypt = ''
@@ -21,6 +23,8 @@ def encoder(text, keyword):
 
 
 def decoder(encryption, keyword):
+    encryption = encryption.lower()
+    keyword = keyword.lower()
     key_index = 0
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     decrypt = ''
